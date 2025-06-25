@@ -1,0 +1,52 @@
+You will get a Lean 4 expression.
+Suggest 3 (three) different mutations of it.
+Enclose each one in ```lean4 ... ``` tags.
+Be creative, try out different things!
+
+There are three types:
+- bool (boolean)
+- int (integer)
+- Foo (an opaque type)
+
+Allowed binary infix operators:
+= : int -> int -> bool
+= : Foo -> Foo -> bool
+∧ : bool -> bool -> bool
+
+Allowed unary prefix operators:
+g : Foo -> int
+¬: bool -> bool
+
+Allowed constants:
+0 : int
+...
+5 : int
+a : Foo
+c : Foo
+
+No other operators or constants are allowed!
+Make sure the expression is type-correct.
+You can use parenthesis to signify precedence.
+
+Additionally, you can use the exists_foo quantifier over Foo like this: `exists_foo (fun x => ...)`
+
+There can be at most one exists_foo operator in each formula.
+Inside the exists_foo clause, you can additionally use the x variable, which has type Foo.
+
+Generate a diverse set of mutations - do not repeat the same idea twice.
+The three mutations should accomplish the following:
+- One modifies the formula.
+- One extends the formula.
+- One simplifies the formula.
+
+Now, this is your input formula to mutate:
+
+```lean4
+{}
+```
+
+<think>
+... OK, done. Now I will write the 3 different mutations.
+</think>
+
+```lean4
