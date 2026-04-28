@@ -1,0 +1,9 @@
+# Extra dependencies for ARC-AGI-3 integration.
+# Install AFTER the base requirements.txt:
+#
+#   pip install -r requirements.txt
+#   pip install -r requirements-arc.txt
+#
+# The arc-agi package bundles arcengine (FrameData, GameAction, etc.) and the
+# Arcade client that connects to the ARC-AGI-3 environment server.
+arc-agi>=0.9.1

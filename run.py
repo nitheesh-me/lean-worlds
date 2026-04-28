@@ -21,6 +21,11 @@ Quick-start
   # 3. Train with the evolutionary algorithm (pragmatic / reward-based fitness)
   python run.py train --objective pragmatic
 
+ARC-AGI-3 integration
+---------------------
+  To run lean-worlds as an ARC-AGI-3 agent, see arc_agent.py and the
+  "ARC-AGI-3 integration" section in README.md.
+
 Prerequisites
 -------------
   1. Python dependencies:
